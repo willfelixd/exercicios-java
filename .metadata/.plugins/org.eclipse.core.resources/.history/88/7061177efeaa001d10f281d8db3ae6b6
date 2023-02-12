@@ -1,0 +1,26 @@
+package com.br;
+
+import java.util.Scanner;
+
+// Escreva um programa Java para trocar duas variáveis.
+public class Exercicio15 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite o nome da primeira variavel: ");
+		String primeiraVariavel = sc.nextLine();
+		System.out.print("Digite o nome da segunda variavel: ");
+		String segundaVariavel = sc.nextLine();
+
+		String troca = primeiraVariavel;
+		primeiraVariavel = segundaVariavel;
+		segundaVariavel = troca;
+
+		System.out.println("Troca realizada com sucesso!!!");
+		System.out.println("A primeira variavel se chama agora: " + primeiraVariavel);
+		System.out.println("A segunda variavel se chama agora: " + segundaVariavel);
+		
+		sc.close();
+	}
+}
